@@ -1,0 +1,25 @@
+.mainblock{
+    display: flex;
+}
+
+.sidebar{
+    flex: 1;
+    background-color: #186F65;
+    height: 100vh;
+}
+
+.content{
+    flex: 3;
+    background-color: aquamarine;
+    height: 100vh;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    color: azure;
+    padding: 2em;
+    margin-top: 2em;
+}
+
