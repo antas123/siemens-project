@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './Login.module.css'; 
+import {useNavigate} from 'react-router-dom';
 import bgvd from "../videos/vdo.mp4"
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div >
     <video src={bgvd} autoPlay loop muted style={{height:"100vh", width:"100%", objectFit:"cover"}}/>

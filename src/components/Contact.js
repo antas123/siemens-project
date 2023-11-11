@@ -9,8 +9,6 @@ const Contact = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        // backgroundAttachment: 'fixed',
-       
         display: 'flex',
         flexDirection:"column",
         justifyContent: 'center',
@@ -20,7 +18,7 @@ const Contact = () => {
 
   return (
     <div style={backgroundStyles}>
-        <h1>Contact us</h1>
+        <h1>Contact Us</h1>
         <h2>Thank you for considering us as your business partner, <br></br>  you can reach out to us at xyz@siemens.com</h2>
     </div>
   )

@@ -10,8 +10,6 @@ const About = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        // backgroundAttachment: 'fixed',
-       
         display: 'flex',
         flexDirection:"column",
         justifyContent: 'center',
@@ -21,7 +19,7 @@ const About = () => {
 
   return (
     <div style={backgroundStyles}>
-    <h1>About us</h1>
+    <h1>About Us</h1>
     <h4 style={{padding:"2em"}} >Siemens Limited is a technology company focused on industry, infrastructure, digital transformation,
      transport as well as transmission and generation of electrical power. It is the flagship listed company 
      of Siemens AG in India. The company’s business structure is well oriented in meeting the needs of the industry

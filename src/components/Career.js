@@ -9,8 +9,6 @@ const Career = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        // backgroundAttachment: 'fixed',
-       
         display: 'flex',
         flexDirection:"column",
         justifyContent: 'center',
