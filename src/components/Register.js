@@ -1,4 +1,3 @@
-// src/components/Register.js
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./Login.module.css"; // Import the CSS module
@@ -12,7 +11,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleRegister = () => {
-    // Add your registration logic here
+   
 
     if (!name || !password || !securityAnswer) {
       setErr(true);

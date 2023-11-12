@@ -1,11 +1,7 @@
 import React from 'react';
-import styles from './Login.module.css'; 
-import {useNavigate} from 'react-router-dom';
 import bgvd from "../videos/vdo.mp4"
 
 const Home = () => {
-
-  const navigate = useNavigate();
 
   return (
     <div >

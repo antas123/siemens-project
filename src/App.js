@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from './components/Login';
 import Register from './components/Register';
@@ -20,8 +20,8 @@ function App() {
         <Route exact path="/register" element={<Register />} />
 
         <Route exact path="/"  element={<Dashboard/>}>
-                <Route exact path="/" element={<Protectedroute Component={Home} />}/>
-                <Route exact path="/dashboard" element={<Protectedroute Component={Dash} />}/>
+                <Route exact path="/home" element={<Protectedroute Component={Home} />}/>
+                <Route exact path="/" element={<Protectedroute Component={Dash} />}/>
                 <Route exact path="about" element={<Protectedroute Component={About} />}/>
                 <Route exact path="contact" element={<Protectedroute Component={Contact} />}/>
                 <Route exact path="career" element={<Protectedroute Component={Career} />}/>

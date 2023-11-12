@@ -32,6 +32,36 @@ const Sidebar = () => {
       <div className={styles.links}>
         <div
           style={{
+            backgroundColor: isLinkActive("/home") ? "#61677A" : null,
+            borderRadius: "25px",
+            height: "2em",
+            padding: "0.1em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Link
+            style={{
+              color: isLinkActive("/home") ? "white" : "grey",
+              textDecoration: "none",
+              fontFamily: "serif",
+              width: "100%",
+              paddingLeft: "10px",
+              fontSize: "0.8em",
+              fontFamily: "Roboto Condensed",
+            }}
+            to="/home"
+          >
+            <FontAwesomeIcon
+              style={{ marginRight: "1em" }}
+              icon="fa-solid fa-house"
+            />
+            Home
+          </Link>
+        </div>
+        <div
+          style={{
             backgroundColor: isLinkActive("/") ? "#61677A" : null,
             borderRadius: "25px",
             height: "2em",
@@ -52,36 +82,6 @@ const Sidebar = () => {
               fontFamily: "Roboto Condensed",
             }}
             to="/"
-          >
-            <FontAwesomeIcon
-              style={{ marginRight: "1em" }}
-              icon="fa-solid fa-house"
-            />
-            Home
-          </Link>
-        </div>
-        <div
-          style={{
-            backgroundColor: isLinkActive("/dashboard") ? "#61677A" : null,
-            borderRadius: "25px",
-            height: "2em",
-            padding: "0.1em",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Link
-            style={{
-              color: isLinkActive("/dashboard") ? "white" : "grey",
-              textDecoration: "none",
-              fontFamily: "serif",
-              width: "100%",
-              paddingLeft: "10px",
-              fontSize: "0.8em",
-              fontFamily: "Roboto Condensed",
-            }}
-            to="/dashboard"
           >
             <FontAwesomeIcon
               style={{ marginRight: "1em" }}
