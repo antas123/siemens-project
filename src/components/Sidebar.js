@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import logo2 from "../images/logo2.jpg";
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import styles from "./Dashboard.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Sidebar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   function handleLogout() {
-    localStorage.removeItem('userName');
+    localStorage.removeItem("userName");
     navigate("login");
   }
 
-  // Function to determine if a link is active
   const isLinkActive = (path) => {
     return location.pathname === path;
   };
@@ -31,91 +30,180 @@ const Sidebar = () => {
         </h5>
       </div>
       <div className={styles.links}>
-      <div  style={{backgroundColor:isLinkActive("/") ? "#61677A" : null, borderRadius:"25px", height:"2em", padding:"0.1em", display:"flex", justifyContent:"center", alignItems:"center"}} >
-        <Link
+        <div
           style={{
-            color: isLinkActive("/") ? "white" : "grey",
-            textDecoration: "none",
-            fontFamily: "serif",
-            width:"100%",
-            paddingLeft:"10px",
-            fontSize:"0.8em",
-            fontFamily:"Roboto Condensed"
+            backgroundColor: isLinkActive("/") ? "#61677A" : null,
+            borderRadius: "25px",
+            height: "2em",
+            padding: "0.1em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-          to="/"
         >
-          <FontAwesomeIcon style={{ marginRight: "1em" }} icon="fa-solid fa-house" />Home
-        </Link>
-      </div>
-      <div  style={{backgroundColor:isLinkActive("/dashboard") ? "#61677A" : null, borderRadius:"25px", height:"2em", padding:"0.1em", display:"flex", justifyContent:"center", alignItems:"center"}} >
-        <Link
+          <Link
+            style={{
+              color: isLinkActive("/") ? "white" : "grey",
+              textDecoration: "none",
+              fontFamily: "serif",
+              width: "100%",
+              paddingLeft: "10px",
+              fontSize: "0.8em",
+              fontFamily: "Roboto Condensed",
+            }}
+            to="/"
+          >
+            <FontAwesomeIcon
+              style={{ marginRight: "1em" }}
+              icon="fa-solid fa-house"
+            />
+            Home
+          </Link>
+        </div>
+        <div
           style={{
-            color: isLinkActive("/dashboard") ? "white" : "grey",
-            textDecoration: "none",
-            fontFamily: "serif",
-            width:"100%",
-            paddingLeft:"10px",
-            fontSize:"0.8em",
-            fontFamily:"Roboto Condensed"
+            backgroundColor: isLinkActive("/dashboard") ? "#61677A" : null,
+            borderRadius: "25px",
+            height: "2em",
+            padding: "0.1em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-          to="/dashboard"
         >
-          <FontAwesomeIcon style={{ marginRight: "1em" }} icon="fa-solid fa-chart-simple" />Dashboard
-        </Link>
-      </div>
-      <div  style={{backgroundColor:isLinkActive("/about") ? "#61677A" : null, borderRadius:"25px", height:"2em", padding:"0.1em", display:"flex", justifyContent:"center", alignItems:"center"}}>
-        <Link
+          <Link
+            style={{
+              color: isLinkActive("/dashboard") ? "white" : "grey",
+              textDecoration: "none",
+              fontFamily: "serif",
+              width: "100%",
+              paddingLeft: "10px",
+              fontSize: "0.8em",
+              fontFamily: "Roboto Condensed",
+            }}
+            to="/dashboard"
+          >
+            <FontAwesomeIcon
+              style={{ marginRight: "1em" }}
+              icon="fa-solid fa-chart-simple"
+            />
+            Dashboard
+          </Link>
+        </div>
+        <div
           style={{
-            color: isLinkActive("/about") ? "white" : "grey",
-            textDecoration: "none",
-            fontFamily: "serif",
-            width:"100%",
-            paddingLeft:"10px",
-            fontSize:"0.8em",
-            fontFamily:"Roboto Condensed"
+            backgroundColor: isLinkActive("/about") ? "#61677A" : null,
+            borderRadius: "25px",
+            height: "2em",
+            padding: "0.1em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-          to="/about"
         >
-          <FontAwesomeIcon style={{ marginRight: "1em" }} icon="fa-solid fa-address-card" />About us
-        </Link>
-      </div>  
-      <div style={{backgroundColor:isLinkActive("/contact") ? "#61677A" : null, borderRadius:"25px", height:"2em", padding:"0.1em", display:"flex", justifyContent:"center", alignItems:"center"}}>
-        <Link
+          <Link
+            style={{
+              color: isLinkActive("/about") ? "white" : "grey",
+              textDecoration: "none",
+              fontFamily: "serif",
+              width: "100%",
+              paddingLeft: "10px",
+              fontSize: "0.8em",
+              fontFamily: "Roboto Condensed",
+            }}
+            to="/about"
+          >
+            <FontAwesomeIcon
+              style={{ marginRight: "1em" }}
+              icon="fa-solid fa-address-card"
+            />
+            About us
+          </Link>
+        </div>
+        <div
           style={{
-            color: isLinkActive("/contact") ? "white" : "grey",
-            textDecoration: "none",
-            fontFamily: "serif",
-            paddingLeft:"10px",
-            width:"100%",
-            fontSize:"0.8em",
-            fontFamily:"Roboto Condensed"
+            backgroundColor: isLinkActive("/contact") ? "#61677A" : null,
+            borderRadius: "25px",
+            height: "2em",
+            padding: "0.1em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-          to="/contact"
         >
-          <FontAwesomeIcon style={{ marginRight: "1em" }} icon="fa-solid fa-address-book" />Contact us
-        </Link>
-      </div>  
+          <Link
+            style={{
+              color: isLinkActive("/contact") ? "white" : "grey",
+              textDecoration: "none",
+              fontFamily: "serif",
+              paddingLeft: "10px",
+              width: "100%",
+              fontSize: "0.8em",
+              fontFamily: "Roboto Condensed",
+            }}
+            to="/contact"
+          >
+            <FontAwesomeIcon
+              style={{ marginRight: "1em" }}
+              icon="fa-solid fa-address-book"
+            />
+            Contact us
+          </Link>
+        </div>
 
-      <div style={{backgroundColor:isLinkActive("/career") ? "#61677A" : null, borderRadius:"25px", height:"2em", padding:"0.1em", display:"flex", justifyContent:"center", alignItems:"center",}}>
-        <Link
+        <div
           style={{
-            color: isLinkActive("/career") ? "white" : "grey",
-            textDecoration: "none",
-            fontFamily: "serif",
-            paddingLeft:"10px",
-            width:"100%",
-            fontSize:"0.8em",
-            fontFamily:"Roboto Condensed"
+            backgroundColor: isLinkActive("/career") ? "#61677A" : null,
+            borderRadius: "25px",
+            height: "2em",
+            padding: "0.1em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-          to="/career"
         >
-          <FontAwesomeIcon style={{ marginRight: "1em" }} icon="fa-solid fa-check" />Careers
-        </Link>
-      </div>  
+          <Link
+            style={{
+              color: isLinkActive("/career") ? "white" : "grey",
+              textDecoration: "none",
+              fontFamily: "serif",
+              paddingLeft: "10px",
+              width: "100%",
+              fontSize: "0.8em",
+              fontFamily: "Roboto Condensed",
+            }}
+            to="/career"
+          >
+            <FontAwesomeIcon
+              style={{ marginRight: "1em" }}
+              icon="fa-solid fa-check"
+            />
+            Careers
+          </Link>
+        </div>
       </div>
-      <div onClick={handleLogout} style={{ padding: "1em", display: "flex", flexDirection: "row", position: "absolute", bottom: "0" }}>
-        <div style={{ display: "flex", alignItems: "center", padding: "0.5em" }}><FontAwesomeIcon style={{ color: "red", fontSize: "large", cursor: "pointer" }} icon="fa-solid fa-right-from-bracket" /></div>
-        <div> <h6 style={{ color: "white", cursor: "pointer" }} >LOGOUT</h6> </div>
+      <div
+        onClick={handleLogout}
+        style={{
+          padding: "1em",
+          display: "flex",
+          flexDirection: "row",
+          position: "absolute",
+          bottom: "0",
+        }}
+      >
+        <div
+          style={{ display: "flex", alignItems: "center", padding: "0.5em" }}
+        >
+          <FontAwesomeIcon
+            style={{ color: "red", fontSize: "large", cursor: "pointer" }}
+            icon="fa-solid fa-right-from-bracket"
+          />
+        </div>
+        <div>
+          {" "}
+          <h6 style={{ color: "white", cursor: "pointer" }}>LOGOUT</h6>{" "}
+        </div>
       </div>
     </div>
   );
