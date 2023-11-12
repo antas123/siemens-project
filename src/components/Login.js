@@ -18,22 +18,8 @@ const Login = () => {
 
     localStorage.setItem("userName", userName);
 
-    alert("Login succeffull");
     navigate("/");
   };
-
-  // const backgroundStyles = {
-  //   height: '100vh',
-  //   backgroundImage: `url(${bg})`,
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: 'center',
-  //   backgroundRepeat: 'no-repeat',
-  //   display: 'flex',
-  //   flexDirection:"column",
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   color: 'white',
-  // };
 
   return (
     <div className={styles.boxm}>
