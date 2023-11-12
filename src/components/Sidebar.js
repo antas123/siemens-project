@@ -114,8 +114,8 @@ const Sidebar = () => {
       </div>  
       </div>
       <div onClick={handleLogout} style={{ padding: "1em", display: "flex", flexDirection: "row", position: "absolute", bottom: "0" }}>
-        <div style={{ display: "flex", alignItems: "center", padding: "0.5em" }}><FontAwesomeIcon style={{ color: "red", fontSize: "x-large", cursor: "pointer" }} icon="fa-solid fa-right-from-bracket" /></div>
-        <div> <h5 style={{ color: "white", cursor: "pointer" }} >LOGOUT</h5> </div>
+        <div style={{ display: "flex", alignItems: "center", padding: "0.5em" }}><FontAwesomeIcon style={{ color: "red", fontSize: "large", cursor: "pointer" }} icon="fa-solid fa-right-from-bracket" /></div>
+        <div> <h6 style={{ color: "white", cursor: "pointer" }} >LOGOUT</h6> </div>
       </div>
     </div>
   );
