@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Career from './components/Career';
 import Home from './components/Home';
 import Protectedroute from './components/Protectedroute';
+import Dash from './components/Dash';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
         <Route exact path="/"  element={<Dashboard/>}>
                 <Route exact path="/" element={<Protectedroute Component={Home} />}/>
+                <Route exact path="/dashboard" element={<Protectedroute Component={Dash} />}/>
                 <Route exact path="about" element={<Protectedroute Component={About} />}/>
                 <Route exact path="contact" element={<Protectedroute Component={Contact} />}/>
                 <Route exact path="career" element={<Protectedroute Component={Career} />}/>
